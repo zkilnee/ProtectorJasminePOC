@@ -6,6 +6,7 @@ var http = require('http');
 exports.config = {
 //  seleniumAddress: 'http://localhost:4444/wd/hub',
   specs: ['APITestCases/*js'],
+
   framework: 'jasmine',
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
