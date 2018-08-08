@@ -3,12 +3,15 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 var http = require('http');
 
 
+
 exports.config = {
 //  seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['APITestCases/*js'],
-
+  specs: ['APITestCases/APITestRest.js'],
+  directConnect:true,
   framework: 'jasmine',
   jasmineNodeOpts: {
+    showColors: true,
+
     defaultTimeoutInterval: 30000
   },
 
@@ -20,10 +23,8 @@ exports.config = {
       browserName: 'chrome',
     }
   ],*/
-jasmineNodeOpts:{
-  showColors: true,
-  defaultTimeoutInterval: 30000
-},
+
+  /*
 
   onPrepare: function () {
     // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
@@ -36,6 +37,7 @@ jasmineNodeOpts:{
     }).getJasmine2Reporter());
 
   },
+  */
 
 
 };
