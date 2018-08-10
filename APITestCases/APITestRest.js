@@ -49,18 +49,21 @@ function parse(){
 
 
 
-parse().then(function(val) {
-    console.log("##################   parse    val  #################"+JSON.stringify(val[0]));
-    console.log("##################   parse    numAPIVal  #################"+val[1]);
+
+var numAPI1=parse().then(function(val) {
+    //console.log("##################   parse    val  #################"+JSON.stringify(val[0]));
+    //console.log("##################   parse    numAPIVal  #################"+val[1]);
+    return JSON.stringify(val[1]);
+    
 }).catch(function(err) {
     reject(err);
 });
 
 
-//var guruAPIresponse= parse();
-//console.log("##################guruAPIresponse#################"+JSON.stringify(guruAPIresponse));
 
+console.log("##################   parse    val 123  #################"+numAPI1);
 
+//module.exports=numAPIsExport;
 /*
 function getNumAPIs(){
     
@@ -76,3 +79,15 @@ getNumAPIs().then(function(numAPIs) {
     console.err(err);
 });
 */
+var test;
+exports.getNumAPI =function (){ 
+    parse().then(function(val) {  
+var test1
+    test1= "TEST";
+}
+);
+
+
+
+
+}

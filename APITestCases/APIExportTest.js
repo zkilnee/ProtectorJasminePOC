@@ -1,5 +1,6 @@
-var rp = require('request-promise');
+var apiTest = function () {
+    return "i want to return";
+};
 
-module.exports = function (numAPIs,numSpecs){
-    
-}
+//console.log(apiTest());
+module.exports = apiTest;
