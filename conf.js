@@ -6,7 +6,7 @@ var http = require('http');
 
 exports.config = {
 //  seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['APITestCases/APITestRest.js'],
+  specs: ['APITestCases/APIExportText2.js'],
   directConnect:true,
   framework: 'jasmine',
   jasmineNodeOpts: {
