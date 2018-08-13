@@ -1,13 +1,11 @@
-var apiTest1 = require('./APIExportTest');
-var numAPIsExport= require('./APITestRest');
-/*
-var test = function(){
+//var apiTest1 = require('./APIExportTest');
+var numAPIsExport = require('./APITestRest');
 
-   console.log(apiTest());
-}
+var cast = Promise.resolve(numAPIsExport);
+cast.then(function (value) {
+    console.log('value: ' + value);
 
-test();
-*/
-console.log(apiTest1());
-console.log(numAPIsExport());
+});
+
+//console.log(apiTest1());
 
